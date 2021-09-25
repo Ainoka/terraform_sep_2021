@@ -1,7 +1,7 @@
 # Input Variables
 variable "ami" {
     type = string
-    default = "ami-087c17d1fe0178315"
+    default = "" # write your ami
     description = "This is an AMI id for EC2 instance, Accepted Processor type 'x86' "
 }
 
@@ -25,7 +25,7 @@ variable "number_of_ec2" {
 
 variable "cidr_block" {
     type = string
-    default = "10.0.0.0/16"
+    default = "" # write your Cider Block 
     description = "The Cider Block for VPC"
 }
 # Default = pick this as a default value
