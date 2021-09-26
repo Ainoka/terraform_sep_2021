@@ -1,7 +1,7 @@
-# Input Variables
+# Input Variablgit es
 variable "ami" {
     type = string
-    default = "" # write your ami
+    default = "---------------" # write your ami #
     description = "This is an AMI id for EC2 instance, Accepted Processor type 'x86' "
 }
 
@@ -19,15 +19,10 @@ variable "env" {
 
 variable "number_of_ec2" {
     type = string
-    default = "3"
+    default = "1"
     description = "number of EC2 Instance"
 }
 
-variable "cidr_block" {
-    type = string
-    default = "" # write your Cider Block 
-    description = "The Cider Block for VPC"
-}
 # Default = pick this as a default value
 ###### Type #####
 # - string = kjhfcah #$$%^ 1233
