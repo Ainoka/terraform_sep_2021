@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket         = "terraform-bucket-session-7"
+    bucket         = "terraform-session-september-2021-remote-backend"
     key            = "session-7/backend/terraform.tfstate"
-    region         = "us-east-1"
+    region         = "us-west-1"
     dynamodb_table = "terraform-state-lock"
   }
 }

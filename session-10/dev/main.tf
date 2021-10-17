@@ -1,5 +1,5 @@
 module "ec2" {
-  source        = "github.com/Ainoka/terraform_sep_2021/modules/ec2"
+  source        = "github.com/Ainoka/terraform_sep_2021//modules/ec2?ref=version1"
   ami           = "ami-03ab7423a204da002"
   instance_type = "t2.micro"
   env           = "dev"
