@@ -37,7 +37,7 @@ resource "aws_security_group_rule" "allow_alb" {
   from_port         = local.app_port
   to_port           = local.app_port
   protocol          = "tcp"
-  cidr_blocks       = ["0.0.0.0/0"] ##We will replaced with Load Balancer SG ID
+  source_security_group_id = aws_security_group.alb_sg.id #cidr_blocks       = ["0.0.0.0/0"] ##We will replaced with Load Balancer SG ID
   security_group_id = aws_security_group.web_sg.id
 }
 
